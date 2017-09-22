@@ -1,0 +1,12 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.milcom\.com.ba$
+RewriteRule ^/?$ "http\:\/\/milcom\.com.ba\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^195\.222\.33\.178
+RewriteRule (.*) http://www.milcom.com.ba/$1 [R=301,L]
+</IfModule>
+
+# END WordPress
